@@ -1,0 +1,51 @@
+{
+  "app": {
+    "bundleName": "com.example.harmonyos04_01",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.harmonyos04_01",
+    "name": ".MyApplication",
+    "mainAbility": "com.example.harmonyos04_01.MainAbility",
+    "deviceType": [
+      "phone",
+      "tv",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": true
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "mainabilityslice02",
+              "mainabilityslice03",
+              "mainabilityslice04"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.example.harmonyos04_01.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

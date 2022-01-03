@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text02_01"
+        ohos:height="35vp"
+        ohos:width="310vp"
+        ohos:background_element="#F2F2F2"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text_alignment="center"
+        ohos:text="ability02"
+        ohos:text_size="30vp"
+        />
+
+    <Button
+        ohos:id="$+id:button02_01"
+        ohos:height="30vp"
+        ohos:width="310vp"
+        ohos:top_margin="20vp"
+        ohos:background_element="#CCCCCC"
+        ohos:text_alignment="center"
+        ohos:text_size="30fp"
+        ohos:text="返回"/>
+
+</DirectionalLayout>
