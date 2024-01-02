@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:alignment="horizontal_center"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+
+
+    <Text
+        ohos:top_padding="20vp"
+        ohos:height="120vp"
+        ohos:width="match_parent"
+        ohos:text="购物商城"
+        ohos:text_size="50fp"
+        ohos:text_alignment="center"
+        ></Text>
+    <DirectionalLayout
+
+        ohos:height="200vp"
+        ohos:width="match_parent">
+
+
+    </DirectionalLayout>
+    <TextField
+        ohos:id="$+id:login_name_textfield"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="登录帐号"
+        ohos:text="sjd"
+        ohos:text_size="15fp"
+        ohos:text_color="#777777"
+        ohos:text_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:padding="10vp"
+
+        ohos:background_element="$graphic:background_textfield"></TextField>
+
+    <TextField
+        ohos:id="$+id:login_pwd_textfield"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:hint="登录密码"
+        ohos:text="123"
+        ohos:text_size="15fp"
+        ohos:text_color="#777777"
+        ohos:text_alignment="vertical_center"
+        ohos:margin="5vp"
+        ohos:padding="10vp"
+        ohos:background_element="$graphic:background_textfield"></TextField>
+
+    <Button
+        ohos:id="$+id:login_btn"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="登   录"
+        ohos:text_color="#ffffff"
+        ohos:text_size="13fp"
+        ohos:padding="10vp"
+        ohos:background_element="#87cefa"
+        ohos:top_margin="15vp"></Button>
+
+
+</DirectionalLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+
+    <Text
+        ohos:id="$+id:shopcart_title_text"
+        ohos:align_parent_top="true"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="我的购物车"
+        ohos:text_size="15fp"
+        ohos:text_color="#bbbbbb"
+        ohos:layout_alignment="center"/>
+
+    <ScrollView
+        ohos:id="$+id:shopcart_list_scrollview"
+        ohos:below="$id:shopcart_title_text"
+        ohos:above="$id:shopcart_add_button"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:bottom_margin="90vp">
+        <TableLayout
+            ohos:id="$+id:shopcart_list_table"
+            ohos:height="match_content"
+            ohos:width="match_parent">
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        ohos:id="$+id:account_button"
+        ohos:align_parent_bottom="true"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="结   算"
+        ohos:text_color="#ffffff"
+        ohos:text_size="13fp"
+        ohos:padding="10vp"
+        ohos:background_element="#87cefa"
+        ohos:bottom_margin="45vp"
+        ohos:bottom_padding="20vp"></Button>
+
+</DependentLayout>

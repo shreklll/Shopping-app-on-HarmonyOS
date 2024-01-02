@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$graphic:background_common"
+    ohos:orientation="vertical"
+    ohos:padding="5vp"
+    >
+    <!--    搜索框-->
+    <TextField
+        ohos:id="$+id:index_search_input"
+        ohos:height="45vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_search_input"
+        ohos:hint="商品名称"
+        ohos:left_padding="15vp"
+        ohos:text_size="20fp"></TextField>
+
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+            <!--    轮播图区域-->
+            <Image
+                ohos:id="$+id:index_image_pageslider"
+                ohos:height="150vp"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:background_index_image"
+                ohos:top_margin="5vp"
+                ohos:image_src="$media:img_index"
+                ></Image>
+            <!--   小图标链接-->
+            <TableLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:column_count="4"
+                ohos:padding="10vp"
+                ohos:top_margin="5vp">
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="83vp"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:height="40vp"
+                        ohos:width="40vp"
+                        ohos:image_src="$media:index_icon1"
+                        ohos:scale_mode="clip_center"></Image>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:bottom_margin="2vp"
+                        ohos:text="电器"
+                        ohos:text_size="8fp"
+                        ohos:top_margin="2vp"></Text>
+                </DirectionalLayout>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="83vp"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:height="40vp"
+                        ohos:width="40vp"
+                        ohos:image_src="$media:index_icon1"
+                        ohos:scale_mode="clip_center"></Image>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:bottom_margin="2vp"
+                        ohos:text="男装"
+                        ohos:text_size="8fp"
+                        ohos:top_margin="2vp"></Text>
+                </DirectionalLayout>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="83vp"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:height="40vp"
+                        ohos:width="40vp"
+                        ohos:image_src="$media:index_icon1"
+                        ohos:scale_mode="clip_center"></Image>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:bottom_margin="2vp"
+                        ohos:text="女装"
+                        ohos:text_size="8fp"
+                        ohos:top_margin="2vp"></Text>
+                </DirectionalLayout>
+
+                <DirectionalLayout
+                    ohos:height="match_content"
+                    ohos:width="83vp"
+                    ohos:alignment="center">
+
+                    <Image
+                        ohos:height="40vp"
+                        ohos:width="40vp"
+                        ohos:image_src="$media:index_icon1"
+                        ohos:scale_mode="clip_center"></Image>
+
+                    <Text
+                        ohos:height="match_content"
+                        ohos:width="match_content"
+                        ohos:bottom_margin="2vp"
+                        ohos:text="生活用品"
+                        ohos:text_size="8fp"
+                        ohos:top_margin="2vp"></Text>
+                </DirectionalLayout>
+            </TableLayout>
+
+            <!--首页推荐列表-->
+            <TableLayout
+                ohos:id="$+id:index_product_list_table"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:column_count="2">
+
+<!--                <DirectionalLayout-->
+<!--                    ohos:id="$+id:layout_product01"-->
+<!--                    xmlns:ohos="http://schemas.huawei.com/res/ohos"-->
+<!--                    ohos:height="228vp"-->
+<!--                    ohos:width="175vp"-->
+<!--                    ohos:background_element="$graphic:background_index_image"-->
+<!--                    ohos:margin="2vp"-->
+<!--                    ohos:orientation="vertical">&lt;!&ndash;圆角&ndash;&gt;-->
+
+<!--                    <Image-->
+<!--                        ohos:id="$+id:product_image1"-->
+<!--                        ohos:height="158vp"-->
+<!--                        ohos:width="178vp"-->
+<!--                        ohos:clip_alignment="center"-->
+<!--                        ohos:image_src="$media:img1"-->
+<!--                        ohos:scale_mode="center"></Image>-->
+
+<!--                    <Text-->
+<!--                        ohos:id="$+id:product_price_text1"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:width="match_parent"-->
+<!--                        ohos:padding="2vp"-->
+<!--                        ohos:text="￥13"-->
+<!--                        ohos:text_color="#ff383b"-->
+<!--                        ohos:text_size="13fp"></Text>-->
+
+
+<!--                </DirectionalLayout>-->
+
+<!--                <DirectionalLayout-->
+<!--                    xmlns:ohos="http://schemas.huawei.com/res/ohos"-->
+<!--                    ohos:height="228vp"-->
+<!--                    ohos:width="175vp"-->
+<!--                    ohos:background_element="$graphic:background_index_image"-->
+<!--                    ohos:margin="2vp"-->
+<!--                    ohos:orientation="vertical">&lt;!&ndash;圆角&ndash;&gt;-->
+
+<!--                    <Image-->
+<!--                        ohos:id="$+id:product_image2"-->
+<!--                        ohos:height="158vp"-->
+<!--                        ohos:width="178vp"-->
+<!--                        ohos:clip_alignment="center"-->
+<!--                        ohos:image_src="$media:img1"-->
+<!--                        ohos:scale_mode="center"></Image>-->
+
+<!--                    <Text-->
+<!--                        ohos:id="$+id:product_price_text2"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:width="match_parent"-->
+<!--                        ohos:padding="2vp"-->
+<!--                        ohos:text="￥13"-->
+<!--                        ohos:text_color="#ff383b"-->
+<!--                        ohos:text_size="13fp"></Text>-->
+
+
+<!--                </DirectionalLayout>-->
+
+<!--                <DirectionalLayout-->
+<!--                    xmlns:ohos="http://schemas.huawei.com/res/ohos"-->
+<!--                    ohos:height="228vp"-->
+<!--                    ohos:width="175vp"-->
+<!--                    ohos:background_element="$graphic:background_index_image"-->
+<!--                    ohos:margin="2vp"-->
+<!--                    ohos:orientation="vertical">&lt;!&ndash;圆角&ndash;&gt;-->
+
+<!--                    <Image-->
+<!--                        ohos:id="$+id:product_image3"-->
+<!--                        ohos:height="158vp"-->
+<!--                        ohos:width="178vp"-->
+<!--                        ohos:clip_alignment="center"-->
+<!--                        ohos:image_src="$media:img1"-->
+<!--                        ohos:scale_mode="center"></Image>-->
+
+<!--                    <Text-->
+<!--                        ohos:id="$+id:product_price_text3"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:width="match_parent"-->
+<!--                        ohos:padding="2vp"-->
+<!--                        ohos:text="￥13"-->
+<!--                        ohos:text_color="#ff383b"-->
+<!--                        ohos:text_size="13fp"></Text>-->
+
+
+<!--                </DirectionalLayout>-->
+
+<!--                <DirectionalLayout-->
+<!--                    xmlns:ohos="http://schemas.huawei.com/res/ohos"-->
+<!--                    ohos:height="228vp"-->
+<!--                    ohos:width="175vp"-->
+<!--                    ohos:background_element="$graphic:background_index_image"-->
+<!--                    ohos:margin="2vp"-->
+<!--                    ohos:orientation="vertical">&lt;!&ndash;圆角&ndash;&gt;-->
+
+<!--                    <Image-->
+<!--                        ohos:id="$+id:product_image4"-->
+<!--                        ohos:height="158vp"-->
+<!--                        ohos:width="178vp"-->
+<!--                        ohos:clip_alignment="center"-->
+<!--                        ohos:image_src="$media:img1"-->
+<!--                        ohos:scale_mode="center"></Image>-->
+
+<!--                    <Text-->
+<!--                        ohos:id="$+id:product_price_text4"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:width="match_parent"-->
+<!--                        ohos:padding="2vp"-->
+<!--                        ohos:text="￥13"-->
+<!--                        ohos:text_color="#ff383b"-->
+<!--                        ohos:text_size="13fp"></Text>-->
+
+
+<!--                </DirectionalLayout>-->
+
+<!--                <DirectionalLayout-->
+<!--                    xmlns:ohos="http://schemas.huawei.com/res/ohos"-->
+<!--                    ohos:height="228vp"-->
+<!--                    ohos:width="175vp"-->
+<!--                    ohos:background_element="$graphic:background_index_image"-->
+<!--                    ohos:margin="2vp"-->
+<!--                    ohos:orientation="vertical">&lt;!&ndash;圆角&ndash;&gt;-->
+
+<!--                    <Image-->
+<!--                        ohos:id="$+id:product_image5"-->
+<!--                        ohos:height="158vp"-->
+<!--                        ohos:width="178vp"-->
+<!--                        ohos:clip_alignment="center"-->
+<!--                        ohos:image_src="$media:img1"-->
+<!--                        ohos:scale_mode="center"></Image>-->
+
+<!--                    <Text-->
+<!--                        ohos:id="$+id:product_price_text5"-->
+<!--                        ohos:height="match_content"-->
+<!--                        ohos:width="match_parent"-->
+<!--                        ohos:padding="2vp"-->
+<!--                        ohos:text="￥13"-->
+<!--                        ohos:text_color="#ff383b"-->
+<!--                        ohos:text_size="13fp"></Text>-->
+
+
+<!--                </DirectionalLayout>-->
+            </TableLayout>
+        </DirectionalLayout>
+    </ScrollView>
+
+
+</DirectionalLayout>

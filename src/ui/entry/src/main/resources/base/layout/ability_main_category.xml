@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+
+    <!--分类页面的 搜索框 -->
+    <TextField
+        ohos:id="$+id:category_search_textfield"
+        ohos:height="35vp"
+        ohos:width="match_parent"
+        ohos:hint="商品名称"
+        ohos:text_size="12fp"
+        ohos:top_padding="5vp"
+        ohos:left_padding="15vp"
+        ohos:background_element="$graphic:background_search_input"></TextField>
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:padding="2vp"
+        ohos:top_margin="5vp"
+        ohos:orientation="horizontal">
+        <!--左侧一级分类-->
+        <TableLayout
+            ohos:id="$+id:fisrt_level_category_table"
+            ohos:height="match_content"
+            ohos:width="100vp"
+            ohos:right_padding="1vp"
+            ohos:background_element="#cccccc">
+
+        </TableLayout>
+
+        <!--右侧二三级分类-->
+        <DirectionalLayout
+            ohos:id="$+id:second_level_category_container"
+            ohos:height="match_content"
+            ohos:width="246vp"
+            ohos:orientation="vertical"
+            ohos:left_padding="5vp">
+
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>
+

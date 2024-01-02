@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp">
+
+    <!--显示默认收货地址-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:padding="5vp"
+        ohos:alignment="vertical_center">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="280vp"
+            ohos:orientation="vertical">
+
+            <Text
+                ohos:id="$+id:addr_name_text"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="张三"
+                ohos:text_size="15fp"/>
+
+
+
+        </DirectionalLayout>
+
+
+
+    </DirectionalLayout>
+
+    <!--选择支付方式-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:padding="20vp"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:top_margin="5vp">
+
+        <RadioContainer
+            ohos:id="$+id:pay_type_radiocontainer"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+            <RadioButton
+                ohos:height="35vp"
+                ohos:width="match_content"
+                ohos:text="微信"
+                ohos:text_size="15fp"
+                ohos:check_element="$graphic:checkbox_check_element"></RadioButton>
+            <RadioButton
+                ohos:height="35vp"
+                ohos:width="match_content"
+                ohos:text="支付宝"
+                ohos:text_size="15fp"
+                ohos:left_margin="30vp"
+                ohos:check_element="$graphic:checkbox_check_element"></RadioButton>
+            <RadioButton
+                ohos:height="35vp"
+                ohos:width="match_content"
+                ohos:text="银联"
+                ohos:text_size="15fp"
+                ohos:left_margin="30vp"
+                ohos:check_element="$graphic:checkbox_check_element"></RadioButton>
+        </RadioContainer>
+
+    </DirectionalLayout>
+
+    <!--订单包含的商品的信息-->
+    <TableLayout
+        ohos:id="$+id:order_add_list_table"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:top_margin="5vp">
+
+    </TableLayout>
+
+    <!--买家备注-->
+    <TextField
+        ohos:id="$+id:order_remark_text"
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:hint="买家备注"
+        ohos:multiple_lines="true"/>
+
+
+    <!--订单信息-->
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:padding="20vp"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:top_margin="5vp"
+        ohos:alignment="right"
+        ohos:orientation="horizontal">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="订单总金额："
+            ohos:text_size="15fp"/>
+        <Text
+            ohos:id="$+id:order_total_price_text"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="￥ 138.80"
+            ohos:text_size="20fp"
+            ohos:text_color="#ff383b"/>
+
+    </DirectionalLayout>
+
+    <!--订单提交按钮-->
+    <Button
+        ohos:id="$+id:order_add_button"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="提交订单"
+        ohos:text_color="#ffffff"
+        ohos:text_size="13fp"
+        ohos:padding="10vp"
+        ohos:background_element="#87cefa"
+        ohos:top_margin="15vp"></Button>
+
+</DirectionalLayout>

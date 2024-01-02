@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common">
+
+<!--    商品详情页轮播图-->
+    <Image
+        ohos:id="$+id:product_detail_image"
+        ohos:height="300vp"
+        ohos:width="match_parent"
+        ohos:background_element="#cccccc"
+        ohos:scale_mode="clip_center">
+
+    </Image>
+
+<!--    商品价格-->
+    <Text
+        ohos:id="$+id:product_detail_price_text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text_size="30vp"
+        ohos:text="￥130.00"
+        ohos:text_color="#ff383b"
+        ohos:top_margin="10vp"></Text>
+<!--    商品信息-->
+    <Text
+        ohos:id="$+id:product_detail_name_text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text_size="15vp"
+        ohos:text_alignment="left"
+        ohos:text="HUAWEIMATE.10"
+        ohos:multiple_lines="true"
+        ohos:top_margin="10vp"></Text>
+    <Text
+        ohos:id="$+id:product_detail_att_text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text_size="12vp"
+        ohos:text_alignment="left"
+        ohos:multiple_lines="true"
+        ohos:text="huwwei  128  8  高通骁龙"
+        ohos:top_margin="10vp"></Text>
+
+<!--    当前商品的套餐列表（单选）-->
+    <ListContainer
+        ohos:id="$+id:product_skus_listcontainer"
+        ohos:height="match_content"
+        ohos:width="match_parent">
+
+
+    </ListContainer>
+
+    <DirectionalLayout
+
+
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+        <Button
+            ohos:id="$+id:shopcart_add_button"
+            ohos:layout_alignment="bottom"
+            ohos:height="match_content"
+            ohos:width="170vp"
+            ohos:text="添加购物车"
+            ohos:text_color="#ffffff"
+            ohos:background_element="#87cefa"
+            ohos:margin="5vp"
+            ohos:bottom_margin="45vp"
+            ohos:padding="10vp"
+            ohos:text_size="13fp"
+            ></Button>
+        <Button
+            ohos:layout_alignment="bottom"
+            ohos:height="match_content"
+            ohos:width="170vp"
+            ohos:text="立即购买"
+            ohos:text_color="#ffffff"
+            ohos:background_element="#ff8827"
+            ohos:margin="5vp"
+            ohos:bottom_margin="45vp"
+            ohos:padding="10vp"
+            ohos:text_size="13fp"
+            ></Button>
+    </DirectionalLayout>
+</DirectionalLayout>

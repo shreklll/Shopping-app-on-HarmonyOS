@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common"
+    >
+    <Text
+        ohos:id="$+id:after_login_text0"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:text_size="30fp"
+        ohos:text="用户中心"
+        ohos:layout_alignment="center"
+        ohos:text_alignment="center"></Text>
+    <Text
+        ohos:id="$+id:after_login_text"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:text_size="30fp"
+        ohos:layout_alignment="center"
+        ohos:text_alignment="center"></Text>
+    <Button
+        ohos:id="$+id:user_login_buttion"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="登录"
+        ohos:text_color="#ffffff"
+        ohos:background_element="$graphic:background_search_button"></Button>
+
+</DirectionalLayout>

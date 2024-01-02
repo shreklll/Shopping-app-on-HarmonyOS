@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:background_element="$graphic:background_common"
+    ohos:padding="5vp"
+    ohos:bottom_padding="50vp">
+
+    <!--  显示用户信息：头像、昵称  -->
+    <DirectionalLayout
+        ohos:height="100vp"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:orientation="horizontal"
+        ohos:alignment="vertical_center">
+
+        <Image
+            ohos:id="$+id:user_image"
+            ohos:height="70vp"
+            ohos:width="70vp"
+            ohos:image_src="$media:img1"
+            ohos:scale_mode="center"
+            ohos:clip_alignment="center"
+            ohos:left_margin="30vp"></Image>
+
+        <Text
+            ohos:id="$+id:user_name_text"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="zhangsan"
+            ohos:text_size="20fp"
+            ohos:left_margin="30vp"/>
+
+    </DirectionalLayout>
+
+    <!--订单状态查询按钮-->
+    <TableLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_index_image"
+        ohos:column_count="3"
+        ohos:top_margin="5vp"
+        ohos:top_padding="10vp"
+        ohos:bottom_padding="10vp">
+        <!--1:待付款 2:待发货 3:待收货 4:待评价 5:已完成 6:已关闭-->
+        <Button
+            ohos:id="$+id:order_query_btn1"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="待付款"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+        <Button
+            ohos:id="$+id:order_query_btn2"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="待发货"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+        <Button
+            ohos:id="$+id:order_query_btn3"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="待收货"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+        <Button
+            ohos:id="$+id:order_query_btn4"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="待评价"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+        <Button
+            ohos:id="$+id:order_query_btn5"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="已完成"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+        <Button
+            ohos:id="$+id:order_query_btn6"
+            ohos:height="match_content"
+            ohos:width="98vp"
+            ohos:text="已关闭"
+            ohos:text_size="15fp"
+            ohos:text_alignment="center"
+            ohos:margin="10vp"/>
+
+    </TableLayout>
+
+    <!--  显示订单列表  -->
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <TableLayout
+            ohos:id="$+id:order_list_table"
+            ohos:height="match_content"
+            ohos:width="match_parent"></TableLayout>
+
+    </ScrollView>
+
+</DirectionalLayout>
